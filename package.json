@@ -1,0 +1,56 @@
+{
+  "name": "@jwkongkong/susu",
+  "version": "1.0.0",
+  "description": "react dialog components.",
+  "main": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ],
+    "plugins": []
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwkongkong/susu.git"
+  },
+  "keywords": [
+    "react",
+    "dialog"
+  ],
+  "author": "jwkongkong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwkongkong/susu/issues"
+  },
+  "homepage": "https://github.com/jwkongkong/susu#readme",
+  "dependencies": {
+    "@jwkongkong/kkcards": "^1.0.0",
+    "@jwkongkong/kktools": "^1.0.4",
+    "@phosphor-icons/react": "^2.0.15"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files"
+  }
+}
